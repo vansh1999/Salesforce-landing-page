@@ -3,11 +3,49 @@
 }
 
 .box01{
-    /* display: block; */
-    height:40px;
-    /* margin-left: 40%; */
-    width:400px;
-    float:center;
+    
+
+    height:20px;
+   
+    width:315px;
+
+    background-image: url('user.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 45px;
+
+    border: 2px solid #ccc;
+    border-radius: 4px;
+
+   font-size: medium;
+
+  padding: 10px 40px 10px 45px;
+
+
+  
+
+}
+
+.box02{
+    
+    height:20px;
+   
+    width:315px;
+    
+
+    background-image: url('password.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    
+   font-size: medium;
+  /* this is important for placeholder not to mix with image  */
+   padding: 10px 40px 10px 45px;  
+
+
+
 }
 
 .button01{
