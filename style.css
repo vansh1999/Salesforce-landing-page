@@ -1,0 +1,109 @@
+/* Universal selector : targets all elements of page */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* goto body */
+/* lets add font */
+
+body {
+	font-family: 'Open Sans', sans-serifs;
+}
+
+/* header -> use flex*/
+header {
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* navbar list -> use flex to horizontal this as well */
+ul {
+	display: flex;
+	list-style-type: none;
+}
+
+ul li a {
+	color: #215ca0;
+	padding: 0px 11px 0px 11px;
+	text-decoration: none;
+}
+/* add a effect */
+li a::after {
+	content: '';
+	display: inline-block;
+	height: 4px;
+	width: 0;
+	background: #215ca0;
+	transition: all .5s;
+}
+/* on hover */
+li a:hover::after {
+	width: 100%;
+}
+
+/* Main section */
+
+main {
+	display: flex;
+	height: 90vh;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.content-left {
+	width: 30%;
+}
+
+.content-right {
+	margin-left: 30px;
+}
+
+.homeImage {
+	/* shrink image with size */
+	max-width: 70%;
+	height: auto;
+	/* and make image right side */
+	float: right;
+}
+
+main h1 {
+	color: #032d60;
+	font-size: 2.8rem;
+	font-weight: 600;
+}
+
+main h3 {
+	color: #181818;
+	font-size: 1.8rem;
+	font-weight: 600;
+	word-spacing: 6px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.cta1 {
+	padding: 20px 20px;
+	margin: 20px 20px;
+	background-color: #278806;
+	color: white;
+	outline: none;
+	border: none;
+}
+
+.cta2 {
+	padding: 20px 20px;
+	margin: 20px 20px;
+	background-color: #0b5cab;
+	color: white;
+	outline: none;
+	border: none;
+}
